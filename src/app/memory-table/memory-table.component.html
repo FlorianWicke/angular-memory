@@ -1,1 +1,6 @@
 <app-card> </app-card>
+<div class="table">
+<p *ngFor="let card of cards" class={{card.class}} ngClass="">
+<img src={{card.imgPath}} id={{card.id}} alt={{card.category}}>
+</p>
+</div>

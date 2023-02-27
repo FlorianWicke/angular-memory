@@ -1,0 +1,23 @@
+
+.table{
+    width: 750px;
+    height: auto;
+    background-color: grey;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card{
+    background-color: black;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+img{
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  display: none;
+}

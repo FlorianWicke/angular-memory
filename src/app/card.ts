@@ -3,4 +3,5 @@ export interface Card {
   imgPath: string;
   id: number;
   category: string;
+  class: string;
 }
