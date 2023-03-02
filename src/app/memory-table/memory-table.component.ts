@@ -10,4 +10,12 @@ export class MemoryTableComponent implements OnInit {
   constructor() {}
   cards = Cards;
   ngOnInit(): void {}
+
+  turnaround(integer: id){
+    console.log(id)
+  }
 }
+
+
+//als nächstes sollte die Funktion die Klasse ändern: von Klasse false (revealed) auf Klasse true (reveled)
+//DAmnit könnte ich die karte umdrehen.
