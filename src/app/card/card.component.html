@@ -1,3 +1,5 @@
-<div class="card-container">
-  <!-- <img src="{{ imgPath }}" alt="" /> -->
+
+<div class="card">
+
+  <img src={{card.imgPath}} class="hidden" [class.visible] = "card.revealed === true" >
 </div>

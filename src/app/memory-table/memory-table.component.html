@@ -1,6 +1,7 @@
-<app-card></app-card>
-<div class="table">
-<p *ngFor="let card of cards" class={{card.class}} class={{card.revealed}}>
-<img src={{card.imgPath}} id={{card.id}} alt={{card.category}} (click)="turnaround(card.id)">
-</p>
+
+<div class="gameTable">
+    <div *ngFor="let card of cards" >
+        <app-card (click)="turnaround(card)" [card]="card">
+        </app-card>
+    </div>
 </div>
