@@ -1,6 +1,6 @@
 import { Card } from './card';
 
-export const Cards: Card[] = [
+export const cards: Card[] = [
   {
     revealed: false,
     imgPath:

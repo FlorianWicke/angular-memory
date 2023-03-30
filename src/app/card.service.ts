@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Card } from './card';
-import { Cards } from './mock-card';
+import { cards } from './mock-card';
 
 @Injectable({
   providedIn: 'root'
@@ -8,12 +7,7 @@ import { Cards } from './mock-card';
 export class CardService {
   constructor() { }
 
-  card:Card[] = [];
-
-  generateCards(){
-    Cards.forEach(element => {
-      return element
-    });
-    return 
+  getCards(){
+    return cards
   }
 }

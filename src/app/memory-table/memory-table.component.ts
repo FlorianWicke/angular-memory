@@ -1,5 +1,4 @@
 import { Component, Injectable, OnInit } from '@angular/core';
-import { Cards } from '../mock-card';
 import { Card } from '../card';
 import { CardService } from '../card.service';
 
@@ -14,8 +13,8 @@ export class MemoryTableComponent implements OnInit {
 
   constructor(private cardService: CardService) {
   }
-  cards = Cards;
-  
+  cards = this.cardService.getCards();  
+
   ngOnInit(): void {}
   hands: Card[] = [];
 
